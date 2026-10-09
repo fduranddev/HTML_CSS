@@ -1,0 +1,128 @@
+header{
+    text-align: center;
+    text-shadow: 4px 4px 10px rgb(58, 91, 162);
+    
+    margin: 2pt 28pt 0pt 28pt;
+    padding: 1em 6em 1em 6em;
+    
+    border-radius: 20px 0px 40px 0px;
+    box-shadow: 8px 12px 60px 8px red,
+                10px 20px 80px 12px blue;
+    
+    color: black;
+    background-color: #566d78;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+/* 
+    Définition du menu de navigation
+*/
+
+nav ul{
+    padding:0;
+    margin:0;
+    list-style-type: none;
+    text-align: left;
+}
+nav #menu li{
+    display: inline-block;
+}
+nav #menu ul li{
+    display: inherit;
+}
+nav a{
+    text-decoration: none;
+    padding: 10pt 20pt;
+    color: black;
+    display: block;
+    background-color: coral;
+    border-radius: 12pt 12pt 0 0 ;
+}
+nav a.active{
+    color:red;
+}
+nav a:hover{
+    background-color: beige;
+}
+nav #menu ul{
+    position: absolute;
+    left: -999em;
+    text-align: left;
+    z-index: 1000;
+}
+nav #menu ul a{
+    border-radius: 0;
+    background-color: beige;
+}
+nav #menu ul a:hover{
+    background-color: coral;
+}
+nav #menu li:hover ul{
+    left: auto;
+}
+/* 
+    La zone de contenu
+*/
+main{
+    background-color: rgba(127, 242, 255, 0.7);
+    margin: 2pt 28pt 0pt 28pt;
+    padding: 1em 6em 1em 6em;
+    font-family: 'Dancing Script', cursive;
+}
+footer{
+    margin: 2pt 28pt 0pt 28pt;
+    padding: 1em 6em 1em 6em;
+    background-color: dimgrey;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+body{
+    background-color: deepskyblue;
+    color: rgb(65, 9, 68);
+    margin: 1em;
+}
+h1, h2{
+    color: #566d78;
+    background-color: rgb(65, 9, 68);
+    border-radius: 6px;
+}
+h1{
+    font-style: italic;
+    font-size: 34px;
+    font-weight: normal;
+}
+header h1{
+    font-size: 60px;
+}
+h2{
+    padding: 8px;
+}
+p{
+    background-color: white;
+    padding: 1em;
+    border-radius: 8px;
+    font-weight: bolder;
+}
+main p#bleu{
+    color:blue;
+    background-color: rgb(189, 44, 177);
+    border-radius: 20px;
+}
+/* ici une définition qui nous intriguera quand nous devrons revenir sur le code */
+#bleu{
+    color:red;
+}
+
+main h1.titre{
+    text-align: center;
+}
+
+section{
+    padding: 12px;
+}
+#contenu{
+    background-color: darksalmon;
+}
+#contenu p{
+    background-color: aquamarine;
+}
+

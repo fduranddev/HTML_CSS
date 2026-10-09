@@ -1,6 +1,9 @@
-[HTML et CSS:le développement Web par la pratique](https://tenexa.udemy.com/course/developpement-web-par-la-pratique/learn/lecture/15600038#overview)
+[Cours Undemy: HTML et CSS:le développement Web par la pratique](https://tenexa.udemy.com/course/developpement-web-par-la-pratique/learn/lecture/15600038#overview)
 
-[Developpeur-WEB](https://github.com/marcyves/Developpeur-WEB)
+[GitHub: Developpeur-WEB](https://github.com/marcyves/Developpeur-WEB)
+
+
+* **Commandes git**:
 
 ```bash
 git init
