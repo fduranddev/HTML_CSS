@@ -3,7 +3,7 @@
 [GitHub: Developpeur-WEB](https://github.com/marcyves/Developpeur-WEB)
 
 
-* **Commandes git**:
+* **Commandes git pour sauvegarder le travail effectué**:
 
 ```bash
 git init
@@ -12,4 +12,11 @@ git commit -m "Premier commit"
 git branch -M main
 git remote add origin https://github.com/fduranddev/HTML_CSS.git
 git push -u origin main
+```
+
+* **Commande git pour récupérer le dépôt**:
+
+```bash
+git clone https://github.com/fduranddev/HTML_CSS.git
+
 ```
