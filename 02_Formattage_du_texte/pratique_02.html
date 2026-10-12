@@ -32,17 +32,43 @@
             SMALL  : caractères en petit
             DEL    : portion de texte qui a été supprimée  
             SUP    : afficher du texte en exposant
-            SUB    : affciher du texte en indice
+            SUB    : afficher du texte en indice
 
 
+        Divers
+            ADRRESS    : élément d'adresse de contact
+            ABBR       : élément d'abréviation
+            BLOCKQUOTE :
+            Q          : élément de citation en incise
+            CITE       : élément de citation
+            BDO        : élément de remplacement bidirectionnelle
+                         * ltr : pour un texte allant de gauche à droite (left-to-right)
+                         * rtl : pour un texte allant de droite à gauche (right-to-left)
     -->
+
     <h1>A - Le formatage du texte</h1>
     <h2>I - Il y a 6 niveaux de titres</h2>
     <!-- Les balises historiques -->
+    Revue des différentes balises <abbr>HTML</abbr> utilisées pour structurer et présenter le texte
     Ici je peux donc <u>écrire du texte</u>. <br>
     Lorem ipsum dolor sit, <i>consectetur adipisicing</i>  elit. <b>Placeat odit vel</b> eos iusto unde fugiat sapiente ipsum vitae, officiis cumque nesciunt magni numquam deleniti minima praesentium totam vero a. Deleniti!
     <h3>1 - Encore un <mark>niveau</mark> plus bas</h3>
     <!-- Les balises recommandées (HTML5) -->
+    <p>
+    Voici une longue citation de Cicéron :
+     <blockquote>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil rem voluptatum soluta iste velit beatae in deleniti ad. Natus unde tempore provident fugiat ducimus dolorum cum mollitia animi? Amet, ut!
+     </blockquote>
+
+    <hr>    
+    <bdo dir="ltr">Ce texte se lit de gauche à droite.</bdo>
+    <br>
+    <bdo dir="rtl">Ce texte se lit de droite à gauche.</bdo> 
+    <hr>
+
+
+     Et une plus courte de Jules César : <q>Alea Jacta Est</q> dans <cite>La guerre des Gaules</cite>
+    </p>
     <p>
     Lorem ipsum dolor sit amet <stong>adipisicing elit</strong> . Amet, quae? <em>vero delectus consequatur consectetur,</em>  aperiam <ins>magni, voluptates</ins> mollitia, at sapiente cupiditate debitis tempora inventore esse ipsam saepe animi.<br>
     </p>
@@ -52,8 +78,15 @@
         <h1>B - Nouveau chapitre</h1>
         <p>Nous sommes au XXI<sup>ième</sup> siècle</p>
         <p>U<sub>i+1</sub> = U <sub>i</sub> + U<sub>i-1</sub></p>
-    Lorem ipsum dolor sit amet, adipisicing elit.Quibusdam inventore nulla magni quidem placeat, itaque cupiditate corporis in libero doloremque est consequatur dolore molestiae cum, nihil sed officiis maxime reiciendis.
+    <p>Lorem ipsum dolor sit amet, adipisicing elit.Quibusdam inventore nulla magni quidem placeat, itaque cupiditate corporis in libero doloremque est consequatur dolore molestiae cum, nihil sed officiis maxime reiciendis.
     <h5>Ici je suis tombé bien bas</h5>
     Lorem ipsum dolor sit amet consectetur adipisicing elit. Non modi quidem ea dolorum molestias assumenda vero doloribus quia, perspiciatis consectetur porro voluptatum totam facere tenetur fugiat enim, minima maiores odit!
+    </p>
+
+    <address>
+        Cette page a étét écrite par Frédéric Durand (fdurand2015@gmail.com)<br>
+        Cyber-espace<br>
+        Planète Terre
+    </address>
 </body>
 </html>

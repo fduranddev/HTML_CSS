@@ -6,8 +6,45 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Démonstration des liens et de target</title>
 </head>
+
+
 <body>
     <h1>Retour vers la page lien</h1>
     Voici le chemin de <a href="liens.html" target="_blank">retour</a>
+
+    <br><br>
+
+<table border="2">
+  <thead>
+    <tr>
+      <th>Valeur</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td><strong><code>_self</code></strong></td>
+      <td><code>_self</code> est la valeur par défaut et exige que le lien s'ouvre dans le même onglet ou la même page.</td>
+    </tr>
+    <tr>
+      <td><strong><code>_blank</code></strong></td>
+      <td><code>_blank</code> permet d'ouvrir le lien hypertexte dans un nouvel onglet ou une autre fenêtre.</td>
+    </tr>
+    <tr>
+      <td><strong><code>_parent</code></strong></td>  
+      <td><code>_parent</code> permet d'ouvrir le lien hypertexte dans la fenêtre parente.</td>
+    </tr>
+    <tr>
+      <td><strong><code>_top</code></strong></td>  
+      <td>Avec l'option <code>_top</code>, le document lié s'ouvrira dans une fenêtre entière.</td>
+    </tr>
+    <tr>
+      <td><strong><code>&lt;nom&gt;</code></strong></td>
+      <td>Cette option vous permet d'ouvrir le document dans une iframe définie.</td>
+    </tr>
+  </tbody>
+</table>
+
 </body>
 </html>

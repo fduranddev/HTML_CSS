@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les tables</title>
+</head>
+<body>
+
+<!--https://tenexa.udemy.com/course/developpement-web-par-la-pratique/learn/lecture/15720776#overview  16 11:42-->
+
+<h1>Les tables</h1>
+
+<h2>Une table simple</h2>
+
+    <table border="1">
+        <tr>
+            <th>Un texte</th><th>Un chiffre</th><th>Un prénom</th><th>Du texte</th>
+        </tr>
+
+        <tr>
+            <td>Ici une données de la table</td><td>150,23</td><td>Marc</td><td>HTML en pratique</td>
+        </tr>
+        <tr>
+            <td>Nouvel exemple</td>
+            <td rowspan="2">3</td>
+            <td>Jacques</td>
+        </tr>
+
+        <tr>
+            <td>Bonjour</td><td>1</td><td>Yves</td><td>CSS plus tard</td>
+        </tr>
+
+        <tr>
+            <td>La planète</td><td>2</td><td colspan="2">Charles</td>
+        </tr>
+    </table>
+
+    <table border="2">
+            <thead>
+                <tr>
+                    <th>Nom</th>
+                    <th>Prénom</th>
+                </tr>
+                <tr><td>Augier</td><td>Marc</td></tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Enfaillite</td>
+                    <td>Mélusine</td>
+                </tr>
+                <tr><td>Menvussa</td><td>Gérard</td></tr>
+                <tr><td>Célaiyre</td><td>Jacques</td></tr>
+            </tbody>
+
+            <tfoot>
+                <tr><th>Ici</th><th>ou là</th></tr>
+                <tr><td>La fin</td><td>du tableau</td></tr>
+            </tfoot>
+    </table>
+    
+</body>
+</html>
