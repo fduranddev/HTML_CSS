@@ -7,7 +7,7 @@
 
 ```bash
 git init
-git add README.md
+git add .
 git commit -m "Premier commit"
 git branch -M main
 git remote add origin https://github.com/fduranddev/HTML_CSS.git
