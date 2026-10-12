@@ -1,8 +1,9 @@
-[Cours Undemy: HTML et CSS:le développement Web par la pratique](https://tenexa.udemy.com/course/developpement-web-par-la-pratique/learn/lecture/15600038#overview)
+# 🚀 Apprentissage: HTML & CSS 
 
-[GitHub: Developpeur-WEB](https://github.com/marcyves/Developpeur-WEB)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)
 
-&nbsp;
+</div>
 
 * :heavy_check_mark: Commandes git pour sauvegarder le travail effectué:
 
@@ -20,5 +21,15 @@ git push -u origin main
 ```bash
 git clone https://github.com/fduranddev/HTML_CSS.git
 ```
+
+&nbsp;
+
+* :heavy_check_mark: Informations
+
+- [Cours Undemy: HTML et CSS:le développement Web par la pratique](https://tenexa.udemy.com/course/developpement-web-par-la-pratique/learn/lecture/15600038#overview)
+
+- [GitHub: Developpeur-WEB](https://github.com/marcyves/Developpeur-WEB)
+
+
 
 
