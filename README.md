@@ -25,17 +25,16 @@ git branch -M main
 git push -u origin main
 ```
 
-## 🚀 Installation
-
-```bash
-git clone https://github.com/fduranddev/HTML_CSS.git
-```
-
-### Personnaliser le dépôt (Répertoire Frederic)
+### Personnaliser le dépôt 
 
 ```bash
 git config user.name "Frédéric Durand"
 git condig user.email "fduranddev@gmail.com"
+```
+## 🚀 Installation
+
+```bash
+git clone https://github.com/fduranddev/HTML_CSS.git
 ```
 
 ---
