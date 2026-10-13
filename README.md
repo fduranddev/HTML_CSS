@@ -6,6 +6,7 @@
 </div>
 
 ## 📥 Commandes git pour sauvegarder le travail effectué
+### Création d'un nouveau dépôt
 
 ```bash
 git init
@@ -13,6 +14,14 @@ git add .
 git commit -m "Premier commit"
 git branch -M main
 git remote add origin https://github.com/fduranddev/HTML_CSS.git
+git push -u origin main
+```
+
+### Pousser le dépôt local vers GitHub
+
+```bash
+git remote add origin https://github.com/fduranddev/HTML_CSS.git
+git branch -M main
 git push -u origin main
 ```
 
