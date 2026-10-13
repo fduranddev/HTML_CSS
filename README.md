@@ -31,6 +31,13 @@ git push -u origin main
 git clone https://github.com/fduranddev/HTML_CSS.git
 ```
 
+### Personnaliser le dépôt (Répertoire Frederic)
+
+```bash
+git config user.name "Frédéric Durand"
+git condig user.email "fduranddev@gmail.com"
+```
+
 ---
 
 ## 📂 Répertoires
