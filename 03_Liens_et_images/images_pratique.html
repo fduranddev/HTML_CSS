@@ -6,12 +6,45 @@
     <title>Les images avec HTML</title>
 </head>
 <body>
-    <h1>Afficher une iamge avec HTML</h1>
+    <!--
+        IMG         = image                       → image (balise : <img src="..." alt="...">)
+
+            Formats d'image
+            JPG     = Joint Photographic Experts Group  → format pour les photos (compression avec perte, pas de transparence)
+            PNG     = Portable Network Graphics         → compression sans perte, gère la transparence
+            GIF     = Graphics Interchange Format       → 256 couleurs maximum, permet les animations
+            SVG     = Scalable Vector Graphics          → image vectorielle, redimensionnable sans perte de qualité
+
+        HEIGHT      = height                      → hauteur de l'image (attribut, en pixels)
+        WIDTH       = width                       → largeur de l'image (attribut, en pixels)
+
+        Adresses absolues, relatives, locales ou en ligne
+            Absolue   = absolute path    → chemin complet depuis la racine
+                                        ex : C:/Users/Fred/images/photo.jpg
+                                        ex : https://www.exemple.com/images/photo.jpg
+            Relative  = relative path    → chemin à partir de l'emplacement du fichier actuel
+                                        ex : images/photo.jpg
+                                        ex : ./images/photo.jpg
+                                        ex : ../images/photo.jpg  (dossier parent)
+            Locale    = local            → image stockée sur ton ordinateur ou ton serveur
+            En ligne  = online / remote  → image hébergée sur un autre site, appelée par son URL (https://...)
+    -->
+    <h1>Afficher une image avec HTML</h1>
+    <img src="img/bandeau.png" alt="Le bandeau" height="200" alt="Le bandeau">
     <p>
        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel in quas harum impedit illo voluptas nostrum temporibus veniam deserunt, cumque dolorem culpa at cum
        voluptatum atque dolor officia provident inventore?    
     </p>
-    <img src="img/hello.png" alt="Hello" width="300">
+
+      <img src="img/hello.png" height="100" width="100" alt="Bonjour à tous">
+
+    <p>
+       Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae in praesentium a ab, assumenda quisquam enim molestias neque perspiciatis qui dicta reiciendis
+       quasi quibusdam animi sapiente rem. Veniam, numquam dolores.
+    </p> 
+
+      <img src="https://i1.wp.com/www.xdm-consulting.fr/wp-content/uploads/2018/08/trinity-digital.png?resize=720%2C340&ssl=1">
+
     <p>
        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio inventore debitis dolore! Repudiandae, ad recusandae. Neque expedita dolores odit nulla,
        quos rerum placeat omnis veniam, magnam, repellat illum ab beatae!

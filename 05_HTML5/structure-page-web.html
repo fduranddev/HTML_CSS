@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<!-- DOCTYPE : indique au navigateur que c'est du HTML5 -->
+<html lang="fr">
+<!-- html : racine de la page, lang="fr" = langue du contenu -->
+
+<head>
+    <!-- head : informations invisibles (titre de l'onglet, encodage, CSS) -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Structure d'une page web</title>
+
+    <style>
+        /* ---------- Base ---------- */
+        * { box-sizing: border-box; }
+
+        body {
+            font-family: Georgia, "Times New Roman", serif;
+            line-height: 1.55;
+            color: #1f2a37;
+            background: #f3f5f7;
+            margin: 0;
+            padding: 16px;
+        }
+
+        /* ---------- Étiquettes : chaque balise affiche son nom ---------- */
+        header, nav, main, article, section, aside, footer, p, h1, h2 {
+            position: relative;
+            border: 2px dashed;
+            border-radius: 6px;
+            padding: 26px 14px 12px;
+            margin: 10px 0;
+            background: #fff;
+        }
+        header::before, nav::before, main::before, article::before,
+        section::before, aside::before, footer::before, p::before,
+        h1::before, h2::before {
+            position: absolute;
+            top: 3px;
+            left: 10px;
+            font: 600 12px/1 ui-monospace, Consolas, monospace;
+        }
+
+        /* ---------- Une couleur par balise ---------- */
+        header  { border-color: #2563eb; background: #eff4ff; }
+        header::before  { content: "<header>"; color: #2563eb; }
+
+        nav     { border-color: #0d9488; background: #effaf8; }
+        nav::before     { content: "<nav>"; color: #0d9488; }
+
+        main    { border-color: #7c3aed; background: #f6f2ff; }
+        main::before    { content: "<main>"; color: #7c3aed; }
+
+        article { border-color: #c2410c; background: #fff4ec; }
+        article::before { content: "<article>"; color: #c2410c; }
+
+        section { border-color: #b45309; background: #fffaf0; }
+        section::before { content: "<section>"; color: #b45309; }
+
+        aside   { border-color: #be185d; background: #fff0f6; }
+        aside::before   { content: "<aside>"; color: #be185d; }
+
+        footer  { border-color: #475569; background: #eef1f4; }
+        footer::before  { content: "<footer>"; color: #475569; }
+
+        h1, h2  { border-color: #15803d; background: #f0fbf3; margin: 6px 0; }
+        h1::before { content: "<h1>"; color: #15803d; }
+        h2::before { content: "<h2>"; color: #15803d; }
+
+        p       { border-color: #64748b; background: #fff; margin: 6px 0; }
+        p::before { content: "<p>"; color: #64748b; }
+
+        h1, h2 { font-size: 1.15rem; }
+
+        /* ---------- Mise en page ---------- */
+        /* header, nav et footer : pleine largeur (comportement par défaut) */
+
+        .contenu {
+            /* Conteneur de main + aside : deux colonnes avec Flexbox */
+            display: flex;
+            gap: 12px;
+            align-items: flex-start;
+        }
+        .contenu main  { flex: 3; }   /* colonne principale : 3 parts */
+        .contenu aside { flex: 1; }   /* colonne latérale : 1 part */
+
+        nav ul {
+            display: flex;
+            gap: 20px;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav a { color: #0d9488; }
+
+        /* Sur petit écran : les colonnes passent l'une sous l'autre */
+        @media (max-width: 640px) {
+            .contenu { flex-direction: column; }
+            .contenu main, .contenu aside { width: 100%; }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- body : tout ce qui s'affiche dans la fenêtre du navigateur -->
+
+    <header>
+        <!-- header : en-tête de la page (logo, titre du site) -->
+        <h1>Titre du site</h1>
+        <p>Slogan ou courte description du site.</p>
+    </header>
+
+    <nav>
+        <!-- nav : menu de navigation (liens principaux) -->
+        <ul>
+            <li><a href="#">Accueil</a></li>
+            <li><a href="#">Cours</a></li>
+            <li><a href="#">Projets</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="contenu">
+        <!-- div : boîte générique, sans signification, ici pour mettre main et aside côte à côte -->
+
+        <main>
+            <!-- main : contenu principal, unique dans la page -->
+            <article>
+                <!-- article : contenu autonome (billet de blog, actualité) -->
+                <h2>Titre de l'article</h2>
+                <p>Premier paragraphe de l'article.</p>
+
+                <section>
+                    <!-- section : partie thématique d'un contenu, avec son titre -->
+                    <h2>Titre de la section</h2>
+                    <p>Texte de la section.</p>
+                </section>
+            </article>
+        </main>
+
+        <aside>
+            <!-- aside : contenu secondaire (liens utiles, publicité, biographie) -->
+            <h2>À lire aussi</h2>
+            <p>Liens ou informations complémentaires.</p>
+        </aside>
+    </div>
+
+    <footer>
+        <!-- footer : pied de page (copyright, mentions légales, contact) -->
+        <p>© 2026 Mon site. Tous droits réservés.</p>
+    </footer>
+
+</body>
+</html>
