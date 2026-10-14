@@ -60,3 +60,5 @@ git clone https://github.com/fduranddev/HTML_CSS.git
 - [GitHub: Developpeur-WEB](https://github.com/marcyves/Developpeur-WEB)
 
 - [HTML CSS JS Playground](https://coddy.tech/playground/html)
+  
+<img src="Page_Web.png" alt="Structure d'une page web" width="600">
