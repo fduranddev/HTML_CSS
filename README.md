@@ -78,8 +78,8 @@ git clone https://github.com/fduranddev/HTML_CSS.git
 flowchart TD
     A[Site] --> B[HTML5]
     A --> C[CSS3]
-    C[CSS3] --> D[Mise en forme]
-    B[HTML5] --> E[Contenu]
+    C --> D[Mise en forme]
+    B --> E[Contenu]
 ```
 
 
