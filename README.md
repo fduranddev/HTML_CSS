@@ -12,7 +12,7 @@
 <img src="images/Diagramme.png" alt="Structure d'une page web" width="300">
 
 ## 📥 Commandes git pour sauvegarder le travail effectué
-### Création d'un nouveau dépôt
+### ➡️ Création d'un nouveau dépôt
 
 ```bash
 git init
@@ -23,7 +23,7 @@ git remote add origin https://github.com/fduranddev/HTML_CSS.git
 git push -u origin main
 ```
 
-### Pousser le dépôt local vers GitHub
+### ➡️ Pousser le dépôt local vers GitHub
 
 ```bash
 git remote add origin https://github.com/fduranddev/HTML_CSS.git
