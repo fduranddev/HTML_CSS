@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<!-- Indique au navigateur que le document est en HTML5 -->
+<html lang="fr">
+<!-- lang="fr" : langue de la page (accessibilité, lecteurs d'écran, correcteur orthographique) -->
+<head>
+    <!-- Encodage UTF-8 : permet d'afficher correctement les accents (é, è, à...) -->
+    <meta charset="UTF-8">
+    <!-- Adapte l'affichage à la largeur de l'écran (téléphones, tablettes) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Titre affiché dans l'onglet du navigateur -->
+    <title>Les formulaires</title>
+</head>
+<body>
+    <!-- Titre principal de la page -->
+    <h1>Les formulaires</h1>   
+  
+    <form action="suite.html" method="get">
+        <h2>Démo de la méthode GET</h2>
+        Votre nom : <input type="text" placeholder="nom ?" name="nom_user">
+        <br>
+        Votre prénom : <input type="text" placeholder="prénom ?" name="prenom_user">
+        <input type="submit" value="Ok">
+    </form>
+   
+    <form action="suite.html" method="post">
+        <h2>Démo de la méthode POST</h2>
+        Votre nom : <input type="text" placeholder="nom ?" name="nom_user">
+        <br>
+        Votre prénom : <input type="text" placeholder="prénom ?" name="prenom_user">
+        <input type="submit" value="Ok">
+    </form>
+</body>
+</html>

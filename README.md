@@ -1,5 +1,8 @@
 # 🚀 Apprentissage: HTML & CSS 
 
+![Repo Size](https://img.shields.io/github/repo-size/fduranddev/HTML-CSS?color=yellow)
+![Stars](https://img.shields.io/github/stars/TonyStark-19/HTML-CSS-JS-Projects?color=blue)
+
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)
 
@@ -37,8 +40,6 @@ git condig user.email "fduranddev@gmail.com"
 git clone https://github.com/fduranddev/HTML_CSS.git
 ```
 
----
-
 ## 📂 Répertoires
 
 | #  | Théorie            | Lien                                |
@@ -51,7 +52,13 @@ git clone https://github.com/fduranddev/HTML_CSS.git
 | 05 | HTML5              | [Clic ici](./05_HTML5/)             |
 | 07 | Projets            | [Clic ici](./Projets/)              |
 
----
+
+## ⚙️ Prérequis
+
+- 🖥️ **rowser moderne** (Chrome, Firefox, Edge, etc.)  
+- 📝 **VS Code** (or any code editor)  
+- 🌐 **Git** (optional, for cloning the repository)  
+
 
 ## 📚 Informations
 
@@ -60,5 +67,24 @@ git clone https://github.com/fduranddev/HTML_CSS.git
 - [GitHub: Developpeur-WEB](https://github.com/marcyves/Developpeur-WEB)
 
 - [HTML CSS JS Playground](https://coddy.tech/playground/html)
+<<<<<<< HEAD
   
 <img src="Page_Web.png" alt="Structure d'une page web" width="600">
+=======
+
+- [Share 100 templates HTML5 CSS3 for developer or beginner](https://github.com/toidicode/template)
+
+- [50Projects-HTML-CSS-JavaScript](https://github.com/tajulafreen/50Projects-HTML-CSS-JavaScript)
+  
+
+## Schéma
+
+```Mermaid
+flowchart TD
+    A[Site] --> B[HTML5]
+    A --> C[CSS3]
+    C[CSS3] --> D[Mise en forme]
+    B[HTML5] --> E[Contenu]
+```
+
+>>>>>>> 053fcae (Modifications)

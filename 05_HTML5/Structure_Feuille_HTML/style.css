@@ -1,113 +1,221 @@
-/* ---------- Variables globales : définies une seule fois dans :root ---------- */
-/* :root = élément racine du document (équivaut à <html>, mais avec plus de priorité) */
-/* --nom : variable CSS (custom property), utilisée plus bas avec var(--nom) */
+/* ==========================================================
+   style.css : mise en évidence des zones d'une page HTML5
+   Chaque zone a sa couleur (contour pointillé, fond léger,
+   étiquette avec le nom de la balise).
+   ========================================================== */
+
+
+/* ----------------------------------------------------------
+   1. VARIABLES (:root)
+   Tout ce qui se règle se trouve ici. Une valeur modifiée
+   change l'ensemble de la page.
+   ---------------------------------------------------------- */
 :root {
-    /* Texte et fond de la page */
-    --texte: #1f2a37;
-    --fond-page: #f3f5f7;
-    --fond-blanc: #ffffff;
+    /* Couleur associée à chaque zone */
+    --couleur-body: #555555;      /* gris */
+    --couleur-header: #1e88e5;    /* bleu */
+    --couleur-nav: #2e9e4f;       /* vert */
+    --couleur-contenu: #757575;   /* gris clair (div.contenu) */
+    --couleur-main: #fbc02d;      /* jaune */
+    --couleur-article: #8e24aa;   /* violet */
+    --couleur-section: #f57c00;   /* orange */
+    --couleur-aside: #d81b60;     /* rose */
+    --couleur-footer: #e53935;    /* rouge */
 
-    /* Une couleur de bordure (--c-) et une couleur de fond (--f-) par balise */
-    --c-header: #2563eb;   --f-header: #eff4ff;
-    --c-nav: #0d9488;      --f-nav: #effaf8;
-    --c-main: #7c3aed;     --f-main: #f6f2ff;
-    --c-article: #c2410c;  --f-article: #fff4ec;
-    --c-section: #b45309;  --f-section: #fffaf0;
-    --c-aside: #be185d;    --f-aside: #fff0f6;
-    --c-footer: #475569;   --f-footer: #eef1f4;
-    --c-titre: #15803d;    --f-titre: #f0fbf3;
-    --c-p: #64748b;
-
-    /* Polices */
-    --police-texte: Georgia, "Times New Roman", serif;
-    --police-code: ui-monospace, Consolas, monospace;
-
-    /* Espacements et formes */
-    --espace: 12px;
-    --rayon: 6px;
-    --bordure: 2px dashed;
+    /* Réglages généraux */
+    --police: "Segoe UI", Arial, sans-serif;  /* police de la page */
+    --texte: #333333;             /* couleur du texte courant */
+    --fond-page: #fafafa;         /* fond de la page */
+    --epaisseur: 2px;             /* épaisseur des pointillés */
+    --rayon: 8px;                 /* arrondi des coins */
+    --espace: 12px;               /* marges et espacements */
+    --opacite-fond: 8%;           /* intensité du fond coloré */
+    --taille-etiquette: 0.6rem;   /* taille du nom de la balise */
 }
 
-/* ---------- Base ---------- */
-* { box-sizing: border-box; }
 
+/* ----------------------------------------------------------
+   2. RÉGLAGE DE BASE
+   ---------------------------------------------------------- */
+
+/* box-sizing: border-box : le padding et la bordure sont
+   inclus dans la largeur des éléments (calculs plus simples) */
+* {
+    box-sizing: border-box;
+}
+
+
+/* ----------------------------------------------------------
+   3. LE BODY
+   --c est une variable locale : la couleur de la zone.
+   Les enfants l'utilisent pour leur bordure, fond et texte.
+   ---------------------------------------------------------- */
 body {
-    font-family: var(--police-texte);
-    line-height: 1.55;
+    --c: var(--couleur-body);
+    font-family: var(--police);
     color: var(--texte);
     background: var(--fond-page);
-    margin: 0;
-    padding: 16px;
+    margin: 20px;
+    padding: var(--espace);
+    border: 3px dotted var(--c);
+    border-radius: 10px;
 }
 
-/* ---------- Étiquettes : chaque balise affiche son nom ---------- */
-header, nav, main, article, section, aside, footer, p, h1, h2 {
+
+/* ----------------------------------------------------------
+   4. BASE COMMUNE À TOUTES LES ZONES
+   ---------------------------------------------------------- */
+
+/* position: relative : permet de positionner le contenu
+   de la zone par rapport à elle-même si besoin */
+body, header, nav, .contenu, main, article, section, aside, footer {
     position: relative;
-    border: var(--bordure);
+}
+
+/* Apparence commune : pointillés colorés + fond teinté */
+header, nav, .contenu, main, article, section, aside, footer {
+    margin: var(--espace) 0;
+    padding: var(--espace) 16px;
+    border: var(--epaisseur) dotted var(--c);
     border-radius: var(--rayon);
-    padding: 26px 14px var(--espace);
-    margin: 10px 0;
-    background: var(--fond-blanc);
-}
-header::before, nav::before, main::before, article::before,
-section::before, aside::before, footer::before, p::before,
-h1::before, h2::before {
-    position: absolute;
-    top: 3px;
-    left: 10px;
-    font: 600 12px/1 var(--police-code);
+    /* color-mix : mélange la couleur de la zone avec du
+       transparent pour obtenir un fond très léger */
+    background: color-mix(in srgb, var(--c) var(--opacite-fond), transparent);
 }
 
-/* ---------- Une couleur par balise (on réutilise les variables) ---------- */
-header  { border-color: var(--c-header); background: var(--f-header); }
-header::before  { content: "<header>"; color: var(--c-header); }
 
-nav     { border-color: var(--c-nav); background: var(--f-nav); }
-nav::before     { content: "<nav>"; color: var(--c-nav); }
+/* ----------------------------------------------------------
+   5. ÉTIQUETTES (nom de la balise affiché en haut de la zone)
+   ::before ajoute du contenu avant le contenu réel, sans
+   toucher au HTML. Pour supprimer les étiquettes, il suffit
+   de supprimer toute la section 5.
+   ---------------------------------------------------------- */
 
-main    { border-color: var(--c-main); background: var(--f-main); }
-main::before    { content: "<main>"; color: var(--c-main); }
-
-article { border-color: var(--c-article); background: var(--f-article); }
-article::before { content: "<article>"; color: var(--c-article); }
-
-section { border-color: var(--c-section); background: var(--f-section); }
-section::before { content: "<section>"; color: var(--c-section); }
-
-aside   { border-color: var(--c-aside); background: var(--f-aside); }
-aside::before   { content: "<aside>"; color: var(--c-aside); }
-
-footer  { border-color: var(--c-footer); background: var(--f-footer); }
-footer::before  { content: "<footer>"; color: var(--c-footer); }
-
-h1, h2  { border-color: var(--c-titre); background: var(--f-titre); margin: 6px 0; font-size: 1.15rem; }
-h1::before { content: "<h1>"; color: var(--c-titre); }
-h2::before { content: "<h2>"; color: var(--c-titre); }
-
-p       { border-color: var(--c-p); background: var(--fond-blanc); margin: 6px 0; }
-p::before { content: "<p>"; color: var(--c-p); }
-
-/* ---------- Mise en page ---------- */
-.contenu {
-    /* Conteneur de main + aside : deux colonnes avec Flexbox */
-    display: flex;
-    gap: var(--espace);
-    align-items: flex-start;
+/* Style commun des étiquettes */
+body::before,
+header::before, nav::before, .contenu::before, main::before,
+article::before, section::before, aside::before, footer::before {
+    display: block;                      /* l'étiquette occupe sa propre ligne */
+    margin-bottom: 4px;
+    font-size: var(--taille-etiquette);  /* petite taille réglable dans :root */
+    font-weight: normal;
+    letter-spacing: 0.05em;              /* léger espacement des lettres */
+    text-transform: uppercase;           /* affichage en majuscules */
+    color: var(--c);                     /* couleur de la zone */
 }
-.contenu main  { flex: 3; }   /* colonne principale : 3 parts */
-.contenu aside { flex: 1; }   /* colonne latérale : 1 part */
 
+/* Texte de chaque étiquette */
+body::before     { content: "body"; }
+header::before   { content: "header"; }
+nav::before      { content: "nav"; }
+.contenu::before { content: "div.contenu"; }
+main::before     { content: "main"; }
+article::before  { content: "article"; }
+section::before  { content: "section"; }
+aside::before    { content: "aside"; }
+footer::before   { content: "footer"; }
+
+
+/* ----------------------------------------------------------
+   6. COULEUR DE CHAQUE ZONE
+   Chaque zone ne fait que choisir sa couleur : le reste
+   (bordure, fond, étiquette) s'adapte automatiquement.
+   ---------------------------------------------------------- */
+header   { --c: var(--couleur-header); }
+nav      { --c: var(--couleur-nav); }
+.contenu { --c: var(--couleur-contenu); }
+main     { --c: var(--couleur-main); }
+article  { --c: var(--couleur-article); }
+section  { --c: var(--couleur-section); }
+aside    { --c: var(--couleur-aside); }
+footer   { --c: var(--couleur-footer); }
+
+
+/* ----------------------------------------------------------
+   7. TITRES ET PARAGRAPHES
+   ---------------------------------------------------------- */
+
+/* Les titres prennent la couleur de leur zone */
+h1, h2 {
+    margin: 0 0 8px;
+    color: var(--c);
+}
+
+/* line-height : espace entre les lignes, pour un texte aéré */
+p {
+    margin: 0 0 8px;
+    line-height: 1.5;
+}
+
+
+/* ----------------------------------------------------------
+   8. MENU DE NAVIGATION
+   ---------------------------------------------------------- */
+
+/* Liste sans puces, éléments alignés horizontalement */
 nav ul {
-    display: flex;
-    gap: 20px;
     list-style: none;
     margin: 0;
     padding: 0;
+    display: flex;       /* les <li> se placent côte à côte */
+    flex-wrap: wrap;     /* retour à la ligne si manque de place */
+    gap: 10px;           /* espace entre les liens */
 }
-nav a { color: var(--c-nav); }
 
-/* Sur petit écran : les colonnes passent l'une sous l'autre */
-@media (max-width: 640px) {
-    .contenu { flex-direction: column; }
-    .contenu main, .contenu aside { width: 100%; }
+/* Liens en forme de pastilles pointillées */
+nav a {
+    display: inline-block;
+    padding: 6px 14px;
+    border: var(--epaisseur) dotted var(--c);
+    border-radius: 999px;   /* très grand arrondi = forme de pilule */
+    color: var(--c);
+    font-weight: bold;
+    text-decoration: none;  /* retire le soulignement */
+    transition: background 0.2s, color 0.2s;  /* changement en douceur */
+}
+
+/* Au survol : la pastille se remplit de la couleur de la zone */
+nav a:hover {
+    background: var(--c);
+    color: #ffffff;
+}
+
+
+/* ----------------------------------------------------------
+   9. MISE EN PAGE : main et aside côte à côte
+   ---------------------------------------------------------- */
+.contenu {
+    display: flex;           /* main et aside sur la même ligne */
+    gap: var(--espace);      /* espace entre les deux */
+    align-items: flex-start; /* alignés en haut, sans étirement */
+}
+
+/* main prend 3 parts sur 4 de la largeur */
+.contenu > main {
+    flex: 3;
+    margin: 0;
+}
+
+/* aside prend 1 part sur 4 */
+.contenu > aside {
+    flex: 1;
+    margin: 0;
+}
+
+
+/* ----------------------------------------------------------
+   10. AFFICHAGE RESPONSIVE (petits écrans)
+   Sous 700 px de large (téléphone), main et aside passent
+   l'un sous l'autre.
+   ---------------------------------------------------------- */
+@media (max-width: 700px) {
+    .contenu {
+        flex-direction: column;  /* empilement vertical */
+    }
+
+    .contenu > main,
+    .contenu > aside {
+        flex: none;
+        width: 100%;          /* chacun prend toute la largeur */
+    }
 }
