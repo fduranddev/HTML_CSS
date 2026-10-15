@@ -7,7 +7,7 @@
 
 </div>
 
-### Schéma
+### 📌 Schéma
 
 <img src="images/Diagramme.png" alt="Structure d'une page web" width="300">
 
