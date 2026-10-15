@@ -8,6 +8,10 @@
 
 </div>
 
+## Schéma
+
+<img src="Diagramme.png" alt="Structure d'une page web" width="300">
+
 ## 📥 Commandes git pour sauvegarder le travail effectué
 ### Création d'un nouveau dépôt
 
@@ -72,8 +76,6 @@ git clone https://github.com/fduranddev/HTML_CSS.git
   
 <img src="Page_Web.png" alt="Structure d'une page web" width="600">
  
-## Schéma
 
-<img src="Diagramme.png" alt="Structure d'une page web" width="300">
 
 
