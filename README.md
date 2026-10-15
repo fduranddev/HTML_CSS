@@ -74,12 +74,6 @@ git clone https://github.com/fduranddev/HTML_CSS.git
  
 ## Schéma
 
-```Mermaid
-flowchart TD
-    A[Site] --> B[HTML5]
-    A --> C[CSS3]
-    C --> D[Mise en forme]
-    B --> E[Contenu]
-```
+<img src="Diagramme.png" alt="Structure d'une page web" width="300">
 
 
