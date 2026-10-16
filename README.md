@@ -9,7 +9,7 @@
 
 ### 📌 Schéma
 
-<img src="images/Diagramme.png" alt="Structure d'une page web" width="300">
+<img src="images/Diagramme1.png" alt="Structure d'une page web" width="300">
 
 ## 📥 Commandes git pour sauvegarder le travail effectué
 ### ➡️ Création d'un nouveau dépôt
