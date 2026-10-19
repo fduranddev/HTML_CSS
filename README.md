@@ -72,8 +72,16 @@ git clone https://github.com/fduranddev/HTML_CSS.git
 - [Share 100 templates HTML5 CSS3 for developer or beginner](https://github.com/toidicode/template)
 
 - [50Projects-HTML-CSS-JavaScript](https://github.com/tajulafreen/50Projects-HTML-CSS-JavaScript)
+
+- [html color picker](https://www.google.com/search?q=html+color+picker&sca_esv=bd9c22ed1e338c70&rlz=1C1GCEA_enFR1193FR1193&sxsrf=APpeQnuPJ-MVbOnOAlS-8TG20sXsS2n5yA%3A1792415841857&ei=YRjWatL4M7aL7M8PgveTgAU&biw=2560&bih=1420&uact=5&oq=html+color+picker&gs_lp=Egxnd3Mtd2l6LXNlcnAiEWh0bWwgY29sb3IgcGlja2VyMgoQABhHGNYEGLADMgoQABhHGNYEGLADMgoQABhHGNYEGLADMgoQABhHGNYEGLADMgoQABhHGNYEGLADMgoQABhHGNYEGLADMgoQABhHGNYEGLADMgoQABhHGNYEGLADMg0QABiABBiKBRhDGLADMg0QABiABBiKBRhDGLADMg0QABiABBiKBRhDGLADMg0QABiABBiKBRhDGLADMg4QABjkAhjWBBiwA9gBATIOEAAY5AIY1gQYsAPYAQEyDhAAGOQCGNYEGLAD2AEBMhcQLhjcBhi4BhjaBhjYAhjIAxiwA9gBATIXEC4Y3AYYuAYY2gYY2AIYyAMYsAPYAQEyFxAuGNwGGLgGGNoGGNgCGMgDGLAD2AEBMhcQLhjcBhi4BhjaBhjYAhjIAxiwA9gBAUiAhwJQAFgAcAN4AZABAJgBAKABAKoBALgBA8gBAJgCA6ACNpgDAIgGAZAGE7oGBggBEAEYCZIHATOgBwCyBwC4BwDCBwUyLTIuMcgHFYAIAQ&sclient=gws-wiz-serp)
   
 <img src="images/Page_Web.png" alt="Structure d'une page web" width="600">
+
+<br>
+
+---
+
+<img src="images/structure_html5.png" alt="Structure d'une page web" width="600">
  
 
 

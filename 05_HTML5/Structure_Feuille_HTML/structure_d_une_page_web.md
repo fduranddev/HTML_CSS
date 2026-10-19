@@ -36,7 +36,7 @@ DIV       = division                   → boîte générique, sans significatio
 
 ---
 
-- _**`index.html`**_ :
+## $\color{blue}{\textsf{index.html}}$ :
 
 ```html
 <!DOCTYPE html>

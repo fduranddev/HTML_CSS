@@ -1,0 +1,65 @@
+:root {
+    /* Couleurs de fond */
+    --couleur-header: darkkhaki;
+    --couleur-main: aquamarine;
+    --couleur-footer: dimgrey;
+
+    /* Couleurs des ombres */
+    --couleur-ombre-texte: darkblue;
+    --couleur-ombre-1: red;
+    --couleur-ombre-2: blue;
+
+    /* Espacements */
+    --espace: 20pt;
+    --marge-header: 20pt 30pt 50pt 80pt;
+
+    /* Ombres : offset-x offset-y blur spread couleur */
+    --ombre-texte: 8px 12px 10px var(--couleur-ombre-texte);
+    --ombre-header: 8px 12px 18px 6px var(--couleur-ombre-1),
+                    10px 20px 20px 12px var(--couleur-ombre-2);
+
+    /* Arrondi : haut-gauche, haut-droit, bas-droit, bas-gauche */
+    --arrondi-header: 20pt 0pt 40pt 0pt;
+}
+
+header {
+    text-align: center;
+    /* Centre le texte horizontalement dans le header */
+
+    text-shadow: var(--ombre-texte);
+    /* Ombre portée du texte (voir --ombre-texte dans :root) */
+
+    margin: var(--marge-header);
+    /* Marges dans l'ordre horaire :
+       haut 20pt, droite 30pt, bas 50pt, gauche 80pt */
+
+    padding: var(--espace);
+    /* Espace intérieur de 20pt sur les 4 côtés */
+
+    border-radius: var(--arrondi-header);
+    /* Arrondi des coins, dans l'ordre : haut-gauche 20pt,
+       haut-droit 0, bas-droit 40pt, bas-gauche 0 */
+
+    box-shadow: var(--ombre-header);
+    /* Deux ombres cumulées : rouge (8px 12px 18px 6px)
+       et bleue (10px 20px 20px 12px) */
+
+    background-color: var(--couleur-header);
+    /* Fond kaki foncé */
+}
+
+main {
+    background-color: var(--couleur-main);
+    /* Fond vert d'eau */
+
+    margin: var(--espace);
+    /* Marge de 20pt sur les 4 côtés */
+}
+
+footer {
+    background-color: var(--couleur-footer);
+    /* Fond gris foncé */
+
+    margin: var(--espace);
+    /* Même marge de 20pt partout */
+}
