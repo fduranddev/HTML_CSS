@@ -1,93 +1,82 @@
-:root {
-  /* ===== Couleurs ===== */
-  --couleur-ardoise: rgb(86, 109, 120);   /* gris-bleu : fond du header et texte des titres */
-  --couleur-prune: rgb(65, 9, 68);        /* violet foncé : texte du body et fond des titres */
-  --couleur-body: deepskyblue;            /* fond de la page */
-  --couleur-main: rgba(127, 242, 255, 0.7); /* cyan clair, 70 % opaque */
-  --couleur-footer: dimgrey;              /* fond du footer */
-  --couleur-paragraphe: white;            /* fond des paragraphes */
-
-  /* ===== Couleurs des ombres ===== */
-  --couleur-ombre-texte: rgb(58, 91, 162);
-  --couleur-ombre-1: red;
-  --couleur-ombre-2: blue;
-
-  /* ===== Espacements ===== */
-  --marge-bloc: 2pt 28pt 0pt 28pt;        /* haut, droite, bas, gauche */
-  --padding-bloc: 1em 6em 1em 6em;        /* haut, droite, bas, gauche */
-
-  /* ===== Arrondis ===== */
-  --arrondi-header: 20pt 0pt 40pt 0pt;    /* haut-gauche, haut-droit, bas-droit, bas-gauche */
-  --arrondi-titre: 6px;
-  --arrondi-paragraphe: 8px;
-
-  /* ===== Ombres : offset-x offset-y blur spread couleur ===== */
-  --ombre-texte: 4px 4px 10px var(--couleur-ombre-texte);
-  --ombre-header: 8px 12px 18px 6px var(--couleur-ombre-1),
-                  10px 20px 80px 12px var(--couleur-ombre-2);
-}
-
 /* ===== En-tête ===== */
 header {
   text-align: center;
   /* Centre le texte horizontalement */
 
-  text-shadow: var(--ombre-texte);
+  text-shadow: 4px 4px 10px rgb(58, 91, 162);
   /* Ombre portée du texte, bleue, décalée de 4px vers la droite et le bas */
 
-  margin: var(--marge-bloc);
-  /* Marges extérieures du bloc */
+  margin: 2pt 28pt 0pt 28pt;
+  /* Marges extérieures du bloc : haut, droite, bas, gauche */
 
-  padding: var(--padding-bloc);
+  padding: 1em 6em 1em 6em;
   /* Espace intérieur : 1em en haut et en bas, 6em à droite et à gauche */
 
-  border-radius: var(--arrondi-header);
+  border-radius: 20pt 0pt 40pt 0pt;
   /* Coins arrondis : seuls haut-gauche et bas-droit le sont */
 
-  box-shadow: var(--ombre-header);
+  box-shadow:
+    8px 12px 18px 6px red,
+    10px 20px 80px 12px blue;
   /* Deux ombres cumulées : une rouge, une bleue plus large et plus floue */
 
-  background-color: var(--couleur-ardoise);
+  background-color: rgb(86, 109, 120);
+  /* Gris-bleu (ardoise) */
+
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /* ===== Contenu principal ===== */
 main {
-  background-color: var(--couleur-main);
+  background-color: rgba(127, 242, 255, 0.7);
   /* Cyan semi-transparent : on devine le fond du body à travers */
 
-  margin: var(--marge-bloc);
-  padding: var(--padding-bloc);
+  margin: 2pt 28pt 0pt 28pt;
+  padding: 1em 6em 1em 6em;
+  font-family: "Dancing Script", cursive;
 }
 
 /* ===== Pied de page ===== */
 footer {
-  margin: var(--marge-bloc);
-  padding: var(--padding-bloc);
-
-  background-color: var(--couleur-footer);
+  margin: 2pt 28pt 0pt 28pt;
+  padding: 1em 6em 1em 6em;
+  background-color: dimgrey;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 /* ===== Page ===== */
 body {
-  background-color: var(--couleur-body);
+  background-color: deepskyblue;
   /* Fond de toute la page */
 
-  color: var(--couleur-prune);
-  /* Couleur du texte par défaut, héritée par les éléments enfants */
+  color: rgb(65, 9, 68);
+  /* Couleur du texte par défaut (prune), héritée par les éléments enfants */
 
   margin: 1em;
   /* Marge autour de la page */
 }
 
 /* ===== Titres ===== */
-h1, h2 {
-  color: var(--couleur-ardoise);
+h1,
+h2 {
+  color: rgb(86, 109, 120);
   /* Texte gris-bleu */
 
-  background-color: var(--couleur-prune);
+  background-color: rgb(65, 9, 68);
   /* Fond violet foncé */
 
-  border-radius: var(--arrondi-titre);
+  border-radius: 6px;
+}
+
+h1 {
+  font-style: italic;
+  font-size: 34px;
+  font-weight: normal;
+}
+
+header h1 {
+  font-size: 60px;
+  /* Taille du texte plus grande pour le h1 dans l'en-tête */
 }
 
 h2 {
@@ -97,7 +86,31 @@ h2 {
 
 /* ===== Paragraphes ===== */
 p {
-  background-color: var(--couleur-paragraphe);
+  background-color: white;
   padding: 1em;
-  border-radius: var(--arrondi-paragraphe);
+  border-radius: 8px;
+  font-weight: bolder;
+}
+
+main p#bleu {
+  color: blue;
+  /* Texte bleu */
+  background-color: rgb(189, 44, 177);
+  border-radius: 20px;
+}
+
+main h1.titre {
+  text-align: center;
+}
+
+section {
+  padding: 12px;
+}
+
+#contenu {
+  background-color: darksalmon;
+}
+
+#contenu p {
+  background-color: aquamarine;
 }
