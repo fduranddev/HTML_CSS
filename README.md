@@ -45,15 +45,15 @@ git clone https://github.com/fduranddev/HTML_CSS.git
 
 ## 📂 Répertoires
 
-| #  | Théorie            | Lien                                |
-|----|--------------------|-------------------------------------|
-| 00 | Git                | [Clic ici](./00_Git/)               |
-| 01 | Bases              | [Clic ici](./01_Bases/)             |
-| 02 | Formatage du texte | [Clic ici](./02_Formatage_du_texte/) |
-| 03 | Liens et images    | [Clic ici](./03_Liens_et_images/)   |
-| 04 | Formulaires        | [Clic ici](./04_Formulaires/)       |
-| 05 | HTML5              | [Clic ici](./05_HTML5/)             |
-| 07 | Projets            | [Clic ici](./Projets/)              |
+| #  | Théorie            | Lien                                |Démo
+|----|--------------------|-------------------------------------|------------------|
+| 00 | Git                | [Clic ici](./00_Git/)               |                  |
+| 01 | Bases              | [Clic ici](./01_Bases/)             |                  |
+| 02 | Formatage du texte | [Clic ici](./02_Formatage_du_texte/) |                 |
+| 03 | Liens et images    | [Clic ici](./03_Liens_et_images/)   |                  |
+| 04 | Formulaires        | [Clic ici](./04_Formulaires/)       |                  |
+| 05 | HTML5              | [Clic ici](./05_HTML5/)             | [index2.html](https://htmlpreview.github.io/?https://github.com/fduranddev/HTML_CSS/blob/main/05_HTML5/index02.html)                 |
+| 07 | Projets            | [Clic ici](./Projets/)              |                  |
 
 ## ⚙️ Prérequis
 
