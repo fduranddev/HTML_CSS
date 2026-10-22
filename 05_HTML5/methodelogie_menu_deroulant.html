@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>README.md</title>
+<title>methodelogie_menu_deroulant.md</title>
 <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
 
 <style>
@@ -353,11 +353,7 @@ code {
 }
 
 </style>
-<<<<<<< HEAD
 
-=======
-<link rel="stylesheet" href="" type="text/css">
->>>>>>> 64672a0 (Modifications)
 <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
 </head>
 <body>
@@ -369,121 +365,34 @@ code {
           : 'default'
     });
   </script>
-<h1 id="-apprentissage-html--css">🚀 Apprentissage: HTML &amp; CSS</h1>
-<p><img src="https://img.shields.io/github/repo-size/fduranddev/HTML_CSS?color=yellow" alt="Repo Size"></p>
-<p><img src="https://img.shields.io/badge/HTML5-E34F26?logo=html5&amp;logoColor=white" alt="HTML5">
-<img src="https://img.shields.io/badge/CSS3-1572B6?logo=css3&amp;logoColor=white" alt="CSS3"></p>
-</div>
-<h3 id="-schéma">📌 Schéma</h3>
-<<<<<<< HEAD
-<img src="images/Diagramme1.png" alt="Structure d'une page web" width="300">
-=======
-<img src="images/Diagramme.png" alt="Structure d'une page web" width="300">
->>>>>>> 64672a0 (Modifications)
-<h2 id="-commandes-git-pour-sauvegarder-le-travail-effectué">📥 Commandes git pour sauvegarder le travail effectué</h2>
-<h3 id="️-création-dun-nouveau-dépôt">➡️ Création d'un nouveau dépôt</h3>
-<pre class="hljs"><code><div>git init
-git add .
-git commit -m <span class="hljs-string">&quot;Premier commit&quot;</span>
-git branch -M main
-git remote add origin https://github.com/fduranddev/HTML_CSS.git
-git push -u origin main
+<h2 id="méthodologie--créer-une-feuille-html-avec-menu-déroulant">Méthodologie : créer une feuille HTML avec menu déroulant</h2>
+<h3 id="1-les-étapes">1. Les étapes</h3>
+<pre><code class="language-mermaid"><div class="mermaid">flowchart LR
+    A[Croquis] --> B[Fichiers] --> C[Squelette HTML] --> D[Balises sémantiques] --> E[Menu] --> F[CSS] --> G[Tests]
 </div></code></pre>
-<h3 id="️-pousser-le-dépôt-local-vers-github">➡️ Pousser le dépôt local vers GitHub</h3>
-<pre class="hljs"><code><div>git remote add origin https://github.com/fduranddev/HTML_CSS.git
-git branch -M main
-git push -u origin main
+<h3 id="2-structure-de-la-page">2. Structure de la page</h3>
+<pre><code class="language-mermaid"><div class="mermaid">flowchart TD
+    body --> header
+    body --> nav
+    body --> contenu["div.contenu"]
+    body --> footer
+    contenu --> main
+    contenu --> aside
+    main --> article
+    article --> h2
+    article --> p
+    article --> section
 </div></code></pre>
-<h3 id="personnaliser-le-dépôt">Personnaliser le dépôt</h3>
-<pre class="hljs"><code><div>git config user.name <span class="hljs-string">&quot;Frédéric Durand&quot;</span>
-git condig user.email <span class="hljs-string">&quot;fduranddev@gmail.com&quot;</span>
+<h3 id="3-structure-du-menu-déroulant">3. Structure du menu déroulant</h3>
+<pre><code class="language-mermaid"><div class="mermaid">flowchart TD
+    nav --> menu["ul.menu"]
+    menu --> accueil["li : Accueil"]
+    menu --> deroulant["li.deroulant : Cours"]
+    menu --> contact["li : Contact"]
+    deroulant --> sous["ul.sous-menu (display: none)"]
+    sous --> html["li : HTML"]
+    sous --> css["li : CSS"]
 </div></code></pre>
-<h2 id="-installation">🚀 Installation</h2>
-<pre class="hljs"><code><div>git <span class="hljs-built_in">clone</span> https://github.com/fduranddev/HTML_CSS.git
-</div></code></pre>
-<h2 id="-répertoires">📂 Répertoires</h2>
-<table>
-<thead>
-<tr>
-<th>#</th>
-<th>Théorie</th>
-<th>Lien</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>00</td>
-<td>Git</td>
-<td><a href="./00_Git/">Clic ici</a></td>
-</tr>
-<tr>
-<td>01</td>
-<td>Bases</td>
-<td><a href="./01_Bases/">Clic ici</a></td>
-</tr>
-<tr>
-<td>02</td>
-<td>Formatage du texte</td>
-<td><a href="./02_Formatage_du_texte/">Clic ici</a></td>
-</tr>
-<tr>
-<td>03</td>
-<td>Liens et images</td>
-<td><a href="./03_Liens_et_images/">Clic ici</a></td>
-</tr>
-<tr>
-<td>04</td>
-<td>Formulaires</td>
-<td><a href="./04_Formulaires/">Clic ici</a></td>
-</tr>
-<tr>
-<td>05</td>
-<td>HTML5</td>
-<td><a href="./05_HTML5/">Clic ici</a></td>
-</tr>
-<tr>
-<td>07</td>
-<td>Projets</td>
-<td><a href="./Projets/">Clic ici</a></td>
-</tr>
-</tbody>
-</table>
-<h2 id="️-prérequis">⚙️ Prérequis</h2>
-<ul>
-<li>🖥️ <strong>rowser moderne</strong> (Chrome, Firefox, Edge, etc.)</li>
-<li>📝 <strong>VS Code</strong> (or any code editor)</li>
-<li>🌐 <strong>Git</strong> (optional, for cloning the repository)</li>
-</ul>
-<h2 id="-informations">📚 Informations</h2>
-<ul>
-<li>
-<p><a href="https://tenexa.udemy.com/course/developpement-web-par-la-pratique/learn/lecture/15600038#overview">Cours Undemy: HTML et CSS:le développement Web par la pratique</a></p>
-</li>
-<li>
-<p><a href="https://github.com/marcyves/Developpeur-WEB">GitHub: Developpeur-WEB</a></p>
-</li>
-<li>
-<p><a href="https://coddy.tech/playground/html">HTML CSS JS Playground</a></p>
-</li>
-<li>
-<p><a href="https://github.com/toidicode/template">Share 100 templates HTML5 CSS3 for developer or beginner</a></p>
-</li>
-<li>
-<p><a href="https://github.com/tajulafreen/50Projects-HTML-CSS-JavaScript">50Projects-HTML-CSS-JavaScript</a></p>
-</li>
-<<<<<<< HEAD
-</ul>
-<img src="images/Page_Web.png" alt="Structure d'une page web" width="600">
-=======
-<li>
-<p><a href="https://www.google.com/search?q=html+color+picker&amp;sca_esv=bd9c22ed1e338c70&amp;rlz=1C1GCEA_enFR1193FR1193&amp;sxsrf=APpeQnuPJ-MVbOnOAlS-8TG20sXsS2n5yA%3A1792415841857&amp;ei=YRjWatL4M7aL7M8PgveTgAU&amp;biw=2560&amp;bih=1420&amp;uact=5&amp;oq=html+color+picker&amp;gs_lp=Egxnd3Mtd2l6LXNlcnAiEWh0bWwgY29sb3IgcGlja2VyMgoQABhHGNYEGLADMgoQABhHGNYEGLADMgoQABhHGNYEGLADMgoQABhHGNYEGLADMgoQABhHGNYEGLADMgoQABhHGNYEGLADMgoQABhHGNYEGLADMgoQABhHGNYEGLADMg0QABiABBiKBRhDGLADMg0QABiABBiKBRhDGLADMg0QABiABBiKBRhDGLADMg0QABiABBiKBRhDGLADMg4QABjkAhjWBBiwA9gBATIOEAAY5AIY1gQYsAPYAQEyDhAAGOQCGNYEGLAD2AEBMhcQLhjcBhi4BhjaBhjYAhjIAxiwA9gBATIXEC4Y3AYYuAYY2gYY2AIYyAMYsAPYAQEyFxAuGNwGGLgGGNoGGNgCGMgDGLAD2AEBMhcQLhjcBhi4BhjaBhjYAhjIAxiwA9gBAUiAhwJQAFgAcAN4AZABAJgBAKABAKoBALgBA8gBAJgCA6ACNpgDAIgGAZAGE7oGBggBEAEYCZIHATOgBwCyBwC4BwDCBwUyLTIuMcgHFYAIAQ&amp;sclient=gws-wiz-serp">html color picker</a></p>
-</li>
-</ul>
-<img src="images/Page_Web.png" alt="Structure d'une page web" width="600">
-<br>
-<hr>
-<img src="images/structure_html5.png" alt="Structure d'une page web" width="600">
->>>>>>> 64672a0 (Modifications)
 
 </body>
 </html>

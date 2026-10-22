@@ -20,13 +20,61 @@ header {
     10px 20px 80px 12px blue;
   /* Deux ombres cumulées : une rouge, une bleue plus large et plus floue */
 
+  color:black;
+
   background-color: rgb(86, 109, 120);
   /* Gris-bleu (ardoise) */
 
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* ===== Contenu principal ===== */
+/* 
+===== Définition du menu de navigation =====
+*/
+
+nav { 
+  background-color: bisque;
+}
+
+nav ul {
+  padding:0;
+  margin:0;
+  list-style-type:none;
+  text-align: left;
+}
+
+nav #menu li {
+  display: inline-block;
+}
+
+nav #menu ul li {
+  display: inherit;
+}
+
+nav a {
+  text-decoration: none;
+  padding: 12px;
+  color: black;
+  display: block;
+  background-color: coral;
+}
+
+nav #menu ul {
+  position: absolute;
+  left: -999em;
+  text-align: left;
+  z-index: 1000;
+}
+
+nav #menu li:hover ul {
+  left: auto;
+}
+
+/* 
+===== Définition de la zone du contenu =====
+*/
+ 
+
 main {
   background-color: rgba(127, 242, 255, 0.7);
   /* Cyan semi-transparent : on devine le fond du body à travers */
