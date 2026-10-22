@@ -84,6 +84,23 @@ git clone https://github.com/fduranddev/HTML_CSS.git
 ---
 
 <img src="images/structure_html5.png" alt="Structure d'une page web" width="600">
+
+<br>
+
+---
+
+<img src="images/css-box-model.png" alt="Structure d'une page web" width="400">
+
+<br>
+
+---
+
+<img src="images/dom_structure.png" alt="Structure d'une page web" width="400">
+
+<br>
+
+---
+
  
 
 
